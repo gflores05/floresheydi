@@ -1,0 +1,32 @@
+@keyframes turning {
+    0% { transform: rotate(-30deg);}
+    25% { transform: rotate(0deg);}
+    50% { transform: rotate(30deg);}
+    75% { transform: rotate(0deg);}
+    100% { transform: rotate(-30deg);}
+}
+.flower {
+    width: 96px;
+    height: 96px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:  fixed;
+    animation-name: turning;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    &.flower1 {
+        background-image: url(../../../assets/flower1.png);
+    }
+    &.flower2 {
+        background-image: url(../../../assets/flower2.png);
+    }
+    &.flower3 {
+        background-image: url(../../../assets/flower3.png);
+    }
+    &.flower4 {
+        background-image: url(../../../assets/flower4.png);
+    }
+    &.flower5 {
+        background-image: url(../../../assets/flower5.png);
+    }
+}
