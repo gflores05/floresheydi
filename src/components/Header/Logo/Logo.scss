@@ -23,8 +23,14 @@
 
         img {
             display: block;
-            width: 2em;
-            height: 2em;
         }
     }
+}
+
+.heydi-banner {
+    background-image: url(../../../assets/images/banner.jpg);
+    background-position: 0 20%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 350px;
 }

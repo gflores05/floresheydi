@@ -10,7 +10,9 @@ const layout = (props) =>
 (
     <Aux>
         <Header></Header>
-        {props.children}
+        <div id="main">
+			<div className="inner">{props.children}</div>
+        </div>
         <Footer></Footer>
     </Aux>
     

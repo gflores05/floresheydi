@@ -8,7 +8,7 @@ import './Footer.scss';
 
 const footer = () => (
     <footer id="footer">
-        <div class="inner">
+        <div className="inner">
             <Contact></Contact>
             <SocialNetworks></SocialNetworks>
             <Copyright></Copyright>
