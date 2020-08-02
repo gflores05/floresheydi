@@ -1,0 +1,35 @@
+.style1 {
+    > .image:before {
+        background-color: _palette(accent1);
+    }
+}
+
+.style2 {
+    > .image:before {
+        background-color: _palette(accent2);
+    }
+}
+
+.style3 {
+    > .image:before {
+        background-color: _palette(accent3);
+    }
+}
+
+.style4 {
+    > .image:before {
+        background-color: _palette(accent4);
+    }
+}
+
+.style5 {
+    > .image:before {
+        background-color: _palette(accent5);
+    }
+}
+
+.style6 {
+    > .image:before {
+        background-color: _palette(accent6);
+    }
+}

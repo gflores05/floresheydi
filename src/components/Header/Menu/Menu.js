@@ -9,9 +9,9 @@ class Menu extends Component {
     state = {
         visible: false
     }
-    toggleMenu() {
-        // evt.preventDefault();
-        // evt.stopPropagation();
+    toggleMenu(evt) {
+        evt.preventDefault();
+        evt.stopPropagation();
 
         this.setState({
             visible: !this.state.visible
