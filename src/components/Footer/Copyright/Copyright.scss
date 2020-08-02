@@ -1,0 +1,58 @@
+@import '../../../styles/libs/index.scss';
+
+.copyright {
+    width: 100%;
+    padding: 0;
+    margin-top: 5em;
+    list-style: none;
+    font-size: 0.8em;
+    color: transparentize(_palette(fg), 0.5);
+
+    a {
+        color: inherit;
+    }
+
+    li {
+        display: inline-block;
+        border-left: solid 1px transparentize(_palette(fg), 0.85);
+        line-height: 1;
+        padding: 0 0 0 1em;
+        margin: 0 0 0 1em;
+
+        &:first-child {
+            border-left: 0;
+            padding-left: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+@include breakpoint('<=small') {
+    @include padding(3em, 0);
+
+    > .inner {
+        .copyright {
+            margin-top: 3em;
+        }
+    }
+}
+
+@include breakpoint('<=xsmall') {
+    > .inner {
+        .copyright {
+            margin-top: 3em;
+
+            li {
+                border-left: 0;
+                padding-left: 0;
+                margin: 0.75em 0 0 0;
+                display: block;
+                line-height: inherit;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
