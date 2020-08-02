@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import { Switch, Route } from 'react-router-dom/cjs/react-router-dom.min';
+
+import Layout from './hoc/Layout/Layout'
+import Home from './containers/Home/Home'
+import Catalog from './containers/Catalog/Catalog'
+import Contact from './containers/Contact/Contact'
+
+import './App.scss';
+
+const App = () => 
+   (
+    <Layout>
+      <Switch>
+        <Route path="/catalog" component={Catalog}></Route>
+        <Route path="/contact" component={Contact}></Route>
+        <Route path="/" exact component={Home}></Route>
+      </Switch>
+    </Layout>
   );
-}
+
 
 export default App;
