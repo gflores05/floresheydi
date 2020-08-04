@@ -6,8 +6,10 @@
     100% { transform: rotate(-30deg);}
 }
 .flower {
-    width: 96px;
-    height: 96px;
+    width: 6vw;
+    height: 6vw;
+    max-width: 96px;
+    max-height: 96px;;
     background-repeat: no-repeat;
     background-size: contain;
     position:  fixed;

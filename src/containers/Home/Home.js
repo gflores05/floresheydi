@@ -31,7 +31,10 @@ class Home extends Component {
             <Aux>
                 <header>
                     <h1>Arreglos florales para toda ocasi&oacute;n</h1>
-                    <p>Ofreciendo a nuestros clientes una opción diferente justo a la medida de su presupuesto.</p>
+                    <p>Somos un emprendimiento local de Arreglos Florales para toda ocasión con variedad de opciones justo a la medida del presupuesto indicado.
+                        Nuestro principal objetivo es brindar diferentes opciones para que cada persona pueda recibir flores en un momento especial o decorar sus eventos
+                        con nuestros diferentes diseños, creando un ambiente de armonía y belleza natural. Deseamos que mediante nuestros diseños florales las personas que los
+                        reciban puedan experimentar la felicidad del amor que se manifiesta en cada detalle.</p>
                 </header>
                 <Tiles items={categoriesTiles}></Tiles>
             </Aux>
