@@ -1,6 +1,6 @@
 import React from 'react';
 
-import heydiLogo from '../../../assets/images/logo.jpg'
+import heydiLogo from '../../../assets/images/logo.png'
 
 import './Logo.scss';
 

@@ -2,20 +2,13 @@ import React, { Component } from 'react';
 
 import Aux from '../../hoc/Aux/Aux';
 
-import pic01 from '../../assets/images/categories/pic01.jpg';
-import pic02 from '../../assets/images/categories/pic02.jpg';
-import pic03 from '../../assets/images/categories/pic03.jpg';
-import pic04 from '../../assets/images/categories/pic04.jpg';
-import pic05 from '../../assets/images/categories/pic05.jpg';
-import pic06 from '../../assets/images/categories/pic06.jpg';
-
 import Tiles from '../../components/Tiles/Tiles';
 
 import './Home.scss';
 
 class Home extends Component {
     render() {
-        const categories = [{
+        const categories = [/*{
             id: 1,
             background: 'style1',
             image: pic01,
@@ -57,7 +50,7 @@ class Home extends Component {
             url: '/catalog',
             title: 'Eventos',
             text: 'Arreglos para eventos'
-        }];
+        }*/];
         return (
             <Aux>
                 <header>
