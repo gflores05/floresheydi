@@ -2,7 +2,7 @@ import * as actionTypes from '../actions/actionTypes';
 import { updateObject } from '../../shared/utilities';
 
 const initialState = {
-    categories: []
+    list: []
 }
 
 const setCategoriesLoaded = (state, action) => {

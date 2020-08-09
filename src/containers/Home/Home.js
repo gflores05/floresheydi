@@ -44,7 +44,7 @@ class Home extends Component {
 
 const mapStateToProps = state => {
     return {
-        categories: state.home.categories
+        categories: state.categories.list
     }
 };
 const mapDispatchToProps = dispatch => {

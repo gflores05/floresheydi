@@ -6,9 +6,9 @@ export const loadCategories = () => {
     }
 };
 
-export const setCategories = (categories) => {
+export const setCategories = (list) => {
     return {
         type: actionTypes.CATEGORIES_LOADED,
-        categories: categories
+        list
     }
 };
