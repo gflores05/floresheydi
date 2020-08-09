@@ -18,7 +18,7 @@ const App = () =>
    (
     <Layout>
       <Switch>
-        <Route path="/catalog" component={Catalog}></Route>
+        <Route path="/catalog/:id?" component={Catalog}></Route>
         <Route path="/contact" component={Contact}></Route>
         <Route path="/" exact component={Home}></Route>
       </Switch>

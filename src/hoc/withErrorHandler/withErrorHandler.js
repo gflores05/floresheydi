@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Aux from '../Aux/Aux';
+import Aux from '../Aux';
 
 const withErrorHandler = ( WrappedComponent ) => {
     return class extends Component {

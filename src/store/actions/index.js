@@ -1,4 +1,2 @@
-export {
-    loadCategories,
-    setCategories
-} from './categories.action';
+export * from './categories.action';
+export * from './products.action';

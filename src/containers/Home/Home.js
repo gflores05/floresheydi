@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import * as actions from '../../store/actions';
-import Aux from '../../hoc/Aux/Aux';
+import { selectCategoriesList } from '../../store/selectors';
+import Aux from '../../hoc/Aux';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import Tiles from '../../components/Tiles/Tiles';
 
@@ -44,7 +45,7 @@ class Home extends Component {
 
 const mapStateToProps = state => {
     return {
-        categories: state.categories.list
+        categories: selectCategoriesList(state)
     }
 };
 const mapDispatchToProps = dispatch => {
