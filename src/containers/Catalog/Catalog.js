@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { Row, Col } from 'react-bootstrap';
+import { CardColumns } from 'react-bootstrap';
 
 import { selectProductsList, selectParamsId } from '../../store/selectors';
 import * as actions from '../../store/actions';
@@ -27,18 +27,17 @@ class Catalog extends Component {
     render() {
         const productsCols = this.props.products.map(product => {
             return (
-                <Col md="3" sm="12">
-                    <Card
-                        image={`/images/products/${product.slug}.jpg`}
-                        title={product.name}
-                        text={product.description}
-                        buttonText="Ordenar"
-                        onClick={ () => this.onOrderProduct(product) }></Card>
-                </Col>
+                <Card
+                    image={`/images/products/${product.slug}.jpg`}
+                    title={product.name}
+                    text={product.description}
+                    buttonText="Ordenar"
+                    className="p-3"
+                    onClick={ () => this.onOrderProduct(product) }></Card>
             );
         });
         return (
-            <Row>{ this.props.products ? productsCols : <Col xs="12">No se encontraron resultados</Col>}</Row>
+            <CardColumns>{ this.props.products ? productsCols : <div class="col-xs-12">No se encontraron resultados</div>}</CardColumns>
         );
     }
 }

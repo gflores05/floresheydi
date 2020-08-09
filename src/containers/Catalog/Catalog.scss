@@ -1,3 +1,19 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+.card-columns {
+  @include media-breakpoint-up(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-down(md) {
+    column-count: 2;
+  }
+  @include media-breakpoint-only(xs) {
+    column-count: 1;
+  }
+}
+
 .card-text {
-    min-height: 111px;
+    min-height: 74px;
 }

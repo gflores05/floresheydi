@@ -6,7 +6,7 @@ import './Card.scss';
 
 const card = (props) => {
     return (
-        <Card>
+        <Card className={props.className}>
             <Card.Img variant="top" src={props.image} />
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
