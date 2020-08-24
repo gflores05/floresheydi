@@ -7,7 +7,7 @@ import './Header.scss';
 
 const header = () => (
     <header id="header">
-        <div className="inner">
+        <div className="">
             <Logo></Logo>
             <Menu></Menu>
         </div>

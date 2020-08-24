@@ -8,7 +8,7 @@
     color: inherit;
     font-weight: _font(weight-bold);
     letter-spacing: _font(letter-spacing);
-    margin: 0 0 (_size(element-margin) * 1.25) 0;
+    // margin: 0 0 (_size(element-margin) * 1.25) 0;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
@@ -29,9 +29,22 @@
 }
 
 .heydi-banner {
-    background-image: url(../../../assets/images/banner.jpg);
-    background-position: 0 20%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 350px;
+    // background-image: url(../../../assets/images/shoproof.png);
+    // background-position: 0 20%;
+    // background-repeat: no-repeat;
+    // background-size: 100%;
+    // min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .heydi-shop-roof {
+        img {
+            max-width: 100%;
+        }
+    }
+    .heydi-logo {
+        background-color: #fce8d2;
+        padding: 16px;
+        border-radius: 8px 8px 0 0;
+    }
 }
