@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
 import { CardColumns } from 'react-bootstrap';
 
 import { selectProductsList, selectParamsId } from '../../store/selectors';
@@ -11,6 +10,8 @@ import Card from '../../components/Card'
 import './style.scss';
 
 class Catalog extends Component {
+
+    
 
     componentDidMount() {
         const search = {};
@@ -28,7 +29,8 @@ class Catalog extends Component {
         const productsCols = this.props.products.map(product => {
             return (
                 <Card
-                    image={`/images/products/${product.slug}.jpg`}
+                    key={product.slug}
+                    image={`products/${product.slug}.jpg`}
                     title={product.name}
                     text={product.description}
                     buttonText="Ordenar"
