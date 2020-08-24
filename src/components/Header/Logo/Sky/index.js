@@ -6,7 +6,7 @@ import cloud3 from '../../../../assets/images/cloud3.png';
 import cloud4 from '../../../../assets/images/cloud4.png';
 import cloud5 from '../../../../assets/images/cloud5.png';
 
-import './Sky.scss';
+import './style.scss';
 
 const sky = () => (
     <div className="heydi-sky">

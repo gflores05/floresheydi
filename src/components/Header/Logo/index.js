@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Sky from './Sky/Sky';
+import Sky from './Sky';
 
 import heydiLogo from '../../../assets/images/logo.png'
 import shopRoof from '../../../assets/images/shoproof.png'
 
-import './Logo.scss';
+import './style.scss';
 
 const logo = () => (
     <div className="heydi-banner">

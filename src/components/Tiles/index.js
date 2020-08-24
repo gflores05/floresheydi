@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Tile from './Tile/Tile';
+import Tile from './Tile';
 
-import './Tiles.scss';
+import './style.scss';
 
 const tiles = (props) => {
     const items = props.items.map(item => {

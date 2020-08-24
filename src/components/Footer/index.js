@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Contact from './Contact/Contact';
-import SocialNetworks from './SocialNetworks/SocialNetworks';
-import Copyright from './Copyright/Copyright';
+import Contact from './Contact';
+import SocialNetworks from './SocialNetworks';
+import Copyright from './Copyright';
 
-import './Footer.scss';
+import './style.scss';
 
 const footer = () => (
     <footer id="footer">

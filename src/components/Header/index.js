@@ -1,9 +1,7 @@
 import React from 'react';
 
-import Logo from './Logo/Logo';
-import Menu from './Menu/Menu';
-
-import './Header.scss';
+import Logo from './Logo';
+import Menu from './Menu';
 
 const header = () => (
     <header id="header">

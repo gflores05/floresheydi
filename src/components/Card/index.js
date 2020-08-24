@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Card } from 'react-bootstrap';
 
-import './Card.scss';
+import './style.scss';
 
 const card = (props) => {
     return (

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import Aux from '../../../hoc/Aux';
 
-import './Menu.scss';
+import './style.scss';
 
 class Menu extends Component {
     state = {

@@ -5,10 +5,10 @@ import { CardColumns } from 'react-bootstrap';
 
 import { selectProductsList, selectParamsId } from '../../store/selectors';
 import * as actions from '../../store/actions';
-import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
+import withErrorHandler from '../../hoc/withErrorHandler';
 import Card from '../../components/Card'
 
-import './Catalog.scss';
+import './style.scss';
 
 class Catalog extends Component {
 

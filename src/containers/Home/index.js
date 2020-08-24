@@ -4,10 +4,8 @@ import { connect } from 'react-redux';
 import * as actions from '../../store/actions';
 import { selectCategoriesList } from '../../store/selectors';
 import Aux from '../../hoc/Aux';
-import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
-import Tiles from '../../components/Tiles/Tiles';
-
-import './Home.scss';
+import withErrorHandler from '../../hoc/withErrorHandler';
+import Tiles from '../../components/Tiles';
 
 class Home extends Component {
     componentDidMount () {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './Flower.scss';
+import './style.scss';
 
 const INIT = -192;
 const INCREMENT = 100;

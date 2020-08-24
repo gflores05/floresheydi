@@ -1,13 +1,8 @@
 import React from 'react';
 
-import './Tile.scss';
+import './style.scss';
 
 const tile = (props) => {
-    // let image = require('../../../assets/images/categories/fifteen-years.jpg');
-
-    //try {
-        // image = require(props.image);
-    //} catch(err) {}
 
     return(
         <article className={props.background}>

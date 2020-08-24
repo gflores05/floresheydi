@@ -1,11 +1,11 @@
 import React from 'react';
 
 import Aux from '../Aux';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
-import Flowers from '../../components/Flowers/Flowers';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import Flowers from '../../components/Flowers';
 
-import './Layout.scss'
+import './style.scss'
 
 const layout = (props) => 
 (

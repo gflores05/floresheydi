@@ -5,10 +5,10 @@ import firebaseConfig from './firebaseConfig';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
-import Layout from './hoc/Layout/Layout'
-import Home from './containers/Home/Home'
-import Catalog from './containers/Catalog/Catalog'
-import Contact from './containers/Contact/Contact'
+import Layout from './hoc/Layout'
+import Home from './containers/Home'
+import Catalog from './containers/Catalog'
+import Contact from './containers/Contact'
 
 import './App.scss';
 

@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
 import Aux from '../../hoc/Aux';
-import Flower from './Flower/Flower';
-
-import './Flowers.scss';
+import Flower from './Flower';
 
 class Flowers extends Component {
     constructor(props) {
