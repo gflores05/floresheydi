@@ -7,6 +7,8 @@ import Aux from '../../hoc/Aux';
 import withErrorHandler from '../../hoc/withErrorHandler';
 import Tiles from '../../components/Tiles';
 
+import './style.scss';
+
 class Home extends Component {
     componentDidMount () {
         this.props.onCategoriesLoad();
@@ -29,7 +31,8 @@ class Home extends Component {
         return (
             <Aux>
                 <header>
-                    <h1>Arreglos florales para toda ocasi&oacute;n</h1>
+                    <h3>¿Te has quedado sin palabras?</h3>
+                    <h1>¡Dilo con Flores!</h1>
                     <p>Somos un emprendimiento local de Arreglos Florales para toda ocasión con variedad de opciones justo a la medida del presupuesto indicado.
                         Nuestro principal objetivo es brindar diferentes opciones para que cada persona pueda recibir flores en un momento especial o decorar sus eventos
                         con nuestros diferentes diseños, creando un ambiente de armonía y belleza natural. Deseamos que mediante nuestros diseños florales las personas que los
