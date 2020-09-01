@@ -13,7 +13,6 @@ class GCard extends Component {
     }
     loadImage () {
         if (!this.state.loaded) {
-            console.log('loading image');
             const storage = firebase.storage().ref();
             storage.child(this.props.image).getDownloadURL().then((url) => {
                 this.setState({
@@ -25,8 +24,10 @@ class GCard extends Component {
             });
         }
     }
-    render() {
+    componentDidMount() {
         this.loadImage();
+    }
+    render() {
         return (
             <Card className={this.props.className}>
                 <Card.Img variant="top" src={this.state.image} />
